@@ -1,0 +1,702 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Títulos */
+
+h1 { 
+    color: #FFD766;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 340%;
+    display: block;
+    padding-top: 7%;
+    padding-bottom: 3%;
+    padding-right: 5%;
+    padding-left: 2%;
+    width: 70%;
+}
+
+@media(max-width:576px){
+    h1{
+        font-size:170%;
+        width: 90%;
+    }
+}
+
+h2 {
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h3 {
+    color:#E61772;
+    font-family: 'Montserrat', sans-serif;
+    font-size:200%;
+}
+
+h4 {
+    color:#E61772;
+    font-family:'Montserrat', sans-serif;
+    font-size:200%;
+}
+
+h5 {
+    color:#E61772;
+    font-family:'Montserrat', sans-serif;
+    font-size: 200%;
+}
+
+h6 {
+    color:#E61772;
+    font-family:'Montserrat', sans-serif;
+    font-size: 100%;
+}
+
+
+/* texto */
+
+/* Es necesario aclarar que la clase "texto" que está a continuación pertenece sólo a el texto de la portada o hero */
+
+.texto {
+    color: white;
+    font-family:'Lato', sans-serif;
+    font-size: 120%;
+    line-height: 15px;
+    letter-spacing: 1px;
+    display:block;
+    padding-top: 0,50%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 2%;
+    width: 50%;
+    line-height: 1.6;
+}
+
+@media(max-width: 576px){
+    .texto{
+        font-size: 80%;
+        width: 80%;
+    }
+
+}
+
+
+/* Este texto "p" pertenece al resto de la página */
+
+p {
+color:black;
+font-family:'Lato', sans-serif;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 1px;
+}
+
+
+/* Menu */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end; 
+   
+}
+
+.menu ul {
+      width: 60vw;
+      height: 6vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-end;
+}
+
+.menu ul li a:hover { 
+            font-size: 16px;
+            color:#E61772;               
+}
+
+
+.menu li a {     
+    color: grey;
+    display: inline;
+    display: inline-block;
+   
+}
+
+@media(max-width: 576px) {
+    .menu ul a {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    }
+}
+
+
+
+/* Home principal */
+
+#home {
+       background-color: black;
+       height:200%;
+       text-align: left;
+       background: url('../images/hero.jpg') center center no-repeat;
+	   background-size: cover; 
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items:flex-start;
+}
+
+.logo {
+    width: 12%;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+@media(max-width:576px){
+    .logo{
+        width: 12%;
+    }
+}
+
+/* Interludio */
+
+.interludio {
+             background-color: grey;
+             text-align:center;
+             display:block;
+             padding-top: 30px;
+             padding-bottom: 30px;
+             background-image: linear-gradient(to bottom, grey , #FFF0CC); /* GRADIENTE APLICADO*/
+}
+
+
+/* Contacto */
+
+#contacto {
+           background-color:#FFF0CC; 
+           text-align: center;
+           display: block;
+           padding-top: 30px;
+           padding-bottom: 30px;
+           display: flex;
+           flex-direction: column;
+}
+
+.descripcionContacto {
+                     padding-bottom: 1vw;
+}
+
+.formulario{
+           align-content: center;
+           padding-top: 1vw;
+           padding-right: 20vw;
+           padding-bottom: 1vw;
+           padding-left: 20vw;
+           display: flex;
+           flex-direction: column;
+}
+
+.imputNombre {
+             padding-bottom: 1vw;
+}
+
+.imputMail {
+             padding-bottom: 1vw;
+}
+
+.barritaOpcion {
+             padding-bottom: 1vw; 
+}
+
+.mensaje {
+          padding-bottom: 1vw;        
+}
+
+.tyc {
+      padding-top: 1vw;
+      padding-bottom: 1vw; 
+}
+
+.checkbox {
+          padding-bottom: 1vw;
+}
+
+.cancelar {
+        margin-top: 1vw;
+}
+
+.enviar:hover {
+        background-color:yellow;
+}
+
+.cancelar:hover {
+        background-color:yellow;
+}
+
+/* Cajas */ /*Aquí es donde apliqué Box Modeling */ 
+
+/*Aca podés simplemente decidir si queres seguir usando block o hacer toda tu diagramacion con flex, grid o lo que quieras*/
+
+#cajas {
+    text-align: center;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* MEDIA QUIERIES */
+
+@media only (min-width: 576px) {
+    .campoCajas {
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+
+.caja1 {
+       display:inline;
+       max-width: 19.5rem;
+       margin-top: 5px;
+       margin-right: auto;
+       margin-bottom: 12px;
+       margin-left: auto; 
+
+       padding-top: 2rem;
+       padding-right: 1.5rem;
+       padding-bottom: 2.75rem;
+       padding-left: 1rem;
+
+}
+
+.caja2 {
+       display:inline;
+       max-width: 19.5rem;
+       margin-top: 5px;
+       margin-right: auto;
+       margin-bottom: 12px;
+       margin-left: auto; 
+
+       padding-top: 2rem;
+       padding-right: 1.5rem;
+       padding-bottom: 2.75rem;
+       padding-left: 1rem;
+}
+
+.caja3 {
+       display: inline;
+       max-width: 19.5rem;
+       margin-top: 10px;
+       margin-right: auto;
+       margin-bottom: 12px;
+       margin-left: auto; 
+
+       padding-top: 2rem;
+       padding-right: 1.5rem;
+       padding-bottom: 2.75rem;
+       padding-left: 1rem;
+}
+
+
+.descripcion {
+             border-bottom: solid 1px grey;
+             padding-bottom: 1rem;
+}
+
+.ml {
+    border-bottom: solid 1px grey;
+    padding-bottom: 1rem;
+}
+
+.blahCaja {
+         padding-top: 1rem;
+         padding-bottom: 1rem;
+}
+
+.blahCaja3 {
+         padding-top: 1rem;
+         padding-bottom:0,5rem;
+}
+
+/* Botones caja*/
+
+.laQuiero {
+       font-family:'Lato', sans-serif;
+       font-size: 100%;
+       margin-top: 5%;
+       margin-bottom: 8%;
+       padding-top: 2%;
+       padding-right: 4%;
+       padding-bottom: 2%; 
+       padding-left: 4%;
+       color: black; 
+       background-color: yellow;
+       width: 40%;
+       height: 20%;
+       
+}
+
+.laQuiero:hover {
+     background-color:#E61772;
+     color:white;
+     text-decoration: none;
+}
+
+/* Botón de Volver */
+
+.return {
+       font-family:'Lato', sans-serif;
+       font-size: 100%;
+       margin-top: 5%;
+       margin-bottom: 8%;
+       padding-top: 30%;
+       padding-right: 6%;
+       padding-left: 6%;
+}
+
+/* Sección Beneficios lista */ /* Contiene GRID pero nose si está bien aplicado */
+
+.contenidoBeneficios {
+                 display: grid;
+                 width: auto;
+                 height: auto;
+                 grid-template-columns: 50vw 50vw;
+                 grid-template-rows: 20vw 10vw 10vw 10vw;
+                 grid-template-areas: 
+                 "lista__titulo beneficiosImagen"
+                 "lista__beneficios 1 beneficiosImagen"
+                 "lista__beneficios 2 beneficiosImagen"
+                 "lista__beneficios 3 beneficiosImagen"        
+}
+
+.lista {
+       display:flex;
+       flex-direction: column;
+
+}
+
+.lista__titulo {
+                 padding-top: 6%;
+                 padding-left: 10%;
+                 font-size:220%;
+                 grid-area: lista__titulo;
+}
+
+
+.lista__beneficios li {
+    margin-right: 10px;
+    height: 40px;
+    padding-top: 6%;
+    padding-left: 6%;
+    padding-bottom: 5%;
+    display:block;
+    color:black;
+    display: list-image;
+    list-style-position: inside;
+    list-style-image: url(./../images/copitamini.png); 
+    grid-area: lista__beneficios  1 lista__beneficios 2  lista__beneficios 3;
+}
+
+.imagenCopita {
+    margin-right: 10px;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    padding-left: 7%; 
+    height: 40px 
+}
+  
+.imagenCopita {
+    margin-right: 1px; 
+    height: 2%;
+}
+
+.beneficio1 {
+     display:flex;
+     flex-direction:row;
+     padding-top: 3%;
+     padding-bottom: 1%;
+     padding-left: 5%;
+     
+}
+
+.beneficio2 {
+     display:flex;
+     flex-direction:row;
+     padding-top: 3%;
+     padding-bottom: 1%;
+     padding-left: 5%;
+}
+
+.beneficio3 {
+     display:flex;
+     flex-direction:row;
+     padding-top: 3%;
+     padding-bottom: 1%;
+     padding-left: 5%;
+    
+}
+
+.beneficiosImagen {
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 6%;
+    width: 70%;
+    grid-area: beneficiosImagen;
+}
+
+/* Sección de Acerca Nuestro */
+ 
+div .acercaNuestro  {
+                     text-align: center;
+                     display: block;
+                     padding-top: 30px;
+                     padding-bottom: 30px;                 
+}
+
+.contenidoNuestro {
+                  display: flex;
+                  flex-direction:row;
+                  justify-content: space-evenly;
+}
+
+.somerville {
+      display: flex;
+      flex-direction:column;
+      text-align:center;
+}
+
+
+.medina {
+        display: flex;
+        flex-direction:column;
+        text-align:center;
+}
+
+.villalonga {
+       display:flex;
+       flex-direction:column;
+       text-align:center;
+}
+
+.simonelli {
+      display:flex;
+      flex-direction:column;
+      text-align:center;
+}
+
+.nombre {
+       font-size: 100%;
+       padding-top: 1vw;
+       padding-bottom: 1vw;
+}
+
+.imagenSommelier {
+                 width: 60%;
+                 padding-left: 4vw;
+                 justify-content: space-evenly;
+
+}
+
+.pcia {
+      padding-bottom: 1vw; 
+}
+
+.blahSommelier {
+              padding-bottom: 1vw;
+}
+
+/* Sección Cómo Funciona */
+
+#comoFunciona {
+                  text-align: center;
+                  display: block;
+                  padding-top: 30px;
+                  padding-bottom: 30px;
+}
+
+.pasos {
+       display: flex;
+       flex-direction: row;
+       text-align: center;
+       justify-content: space-evenly;
+       height: 100%;
+}
+       
+.paso1 {
+       display:flex;
+       flex-direction:column;
+       width:30%;
+       height:30%;
+       align-content: center;
+}
+
+.paso2 { 
+       display: flex;
+       flex-direction:column;
+       width: 30%;
+       height:30%;
+       align-content: center;
+}
+
+.paso3 {
+       display:flex;
+       flex-direction:column;
+       width: 30%;
+       height:30%;
+       align-content: center;
+}
+
+.img1 {
+      width:50%;
+      height:50%;
+      justify-content:space-evenly;
+      padding-left: 20%;
+      padding-bottom: 5%;
+}
+
+.img2 {
+      width:50%;
+      height:50%;
+      justify-content:space-evenly;
+      padding-left: 20%;
+      padding-bottom: 5%;
+}
+
+.img3 {
+     width:50%;
+     height:50%;
+     justify-content:space-evenly;
+     padding-left: 20%;
+     padding-bottom: 5%;
+}
+
+.blahPasos {
+           padding-top:1vw;
+           padding-right: 1vw;
+           padding-left: 1vw;
+}
+
+/* Sección caja abierta */
+
+/* imagen */
+.cajaChica {
+    width:70%;
+    padding-top:8%;
+    padding-left: 4%;
+}
+/*Fin imagen*/ 
+
+.cajaCompra {
+           width: 100vw;
+           display: flex;
+           flex-direction: row;
+           padding-bottom: 1vw;
+}
+
+
+.probaInfo{
+          width: 50%;
+          padding-top: 8vw; 
+          padding-bottom: 1vw;
+}
+
+.probaInfo__titulo {
+    color:#E61772;
+    padding-top: 6vw; 
+    padding-bottom: 1vw;
+}
+
+.probaInfo__texto {
+          width: 60%;
+          padding-bottom: 0,5vw;
+}
+
+.probainfo__mas {
+     padding-left: 6vw;
+     font-size: 14px;
+}
+
+.probaInfo__lista {
+    padding-top: 0,5vw;
+    padding-bottom: 1vw; 
+    color:black;
+    font-family:'Lato', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;      
+}
+
+.probaInfo__precio {
+       font-size: 200%;
+       padding-top: 1vw;
+       padding-bottom: 2vw;
+}
+
+/* Marcas con las que trabajamos */
+
+.container {
+           text-align: center;
+           padding-top: 2vw;
+           padding-bottom: 3vw;
+}
+
+.tituloSlider {
+           font-size: 100%;
+}
+
+.swiper-wrapper {
+           display: flex;
+           flex-direction: row;
+           justify-content: space-evenly;
+           padding-top: 3vw;
+}
+
+/* Vinito */
+
+.vinito {
+    background-color:#FFF0CC;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info {
+  padding-top: 4%;
+  padding-right: 20%;
+  padding-bottom: 4%;
+  padding-left: 15%;
+  line-height: 1.8;
+}
+
+.botella {
+     padding-top: 4%;
+     padding-right: 26%;
+     padding-bottom: 4%;
+     padding-left: 8%;
+     align-items: center; 
+
+}     
+
+/* Footer */
+
+.footer {
+    display:inline;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    
+}
